@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to display only elements containing 'a' in them from a array</title>
+</head>
+<body>
+    <script>
+        let arr = ["laptop","keyboard","mouse","camera","JavaScript"];
+        document.write("<h1>The elements containing a are : </h1>");
+        for(let i=0 ; i<arr.length ; i++) 
+        { 
+            if(arr[i].includes("a")) 
+            { 
+                document.writeln(`<h2>${arr[i]}</h2>`);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to search for a element in a array of strings</title>
+</head>
+<body>
+    <script>
+        var languages = ['c programming','java','python','JavaScript','html','css','servlets'];
+        var founder='html'
+        var counter=0;
+        for (var i=0; i<languages.length;i++){
+            if (languages[i]==founder){
+                counter++;
+            }
+        }
+
+        if(counter>0){
+            document.write("<h2>Element found in array of strings</h2>");
+        }else{
+            document.write("<h2>Element not found in array of strings</h2>");
+        }
+    </script>
+</body>
+</html>
