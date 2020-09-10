@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Input and Button</title>
+    <style>
+        body{
+            background-color:bisque;
+        }
+        h1{
+            font-size: 80px;
+            text-align:center;
+        }
+        .button{
+        margin-left: 10%;
+        margin-top: 5%;
+        }
+        .button button{
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        background-color: chartreuse ;
+        color: black;
+        border: 2px solid #ffffff;
+        font-weight: bold;
+        font-size: large;
+        cursor: pointer;
+        }
+        .button button:hover{
+        color: black;
+        border: 2px solid chartreuse;
+        background-color: #00000000;
+        }
+        label{
+            font-size: 50px;
+        }
+        textarea{
+            width: 300px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Create a webpage containing two input fields and a button</h1>
+    <div class="text-boxes">
+        <label>First : </label><textarea name="first" type="text" id="text1"></textarea>
+        <label>Second : </label><textarea name="second" type="text" id="text2"
+            placeholder="the text in the first is copied to second on clicking the button"></textarea>
+    </div>
+    <div class="button">
+        <button onclick="copy()" type="button">COPY TEXT</button>
+        <button onclick="reset()" type="button">RESET</button>
+        
+    </div>
+    
+
+    <script>
+        function copy() {
+            var msg=document.getElementById("text1").value;
+            var msg1=document.getElementById("text2").value=msg;
+        }
+        function reset() {
+            var msg=document.getElementById("text1").value="";
+            var msg1=document.getElementById("text2").value="";
+        }
+
+
+        
+    </script>
+</body>
+</html>

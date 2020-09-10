@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="3.js"></script>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        li {
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        .button {
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        .button button {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            background-color: chartreuse;
+            color: black;
+            border: 2px solid #ffffff;
+            font-weight: bold;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            color: black;
+            border: 2px solid chartreuse;
+            background-color: #00000000;
+        }
+    </style>
+    <title>Following the 3rd Question</title>
+</head>
+<body>
+    <div>
+        <h1>Following the 3rd question</h1>
+        <ol>
+            <li>
+                Write a function to display all the objects having age less than 30
+            </li>
+            <li>
+                Write a function to display all the objects having country India
+            </li>
+        </ol>
+    </div>
+    <div class="button">
+        <button onclick="display1()">DISPLAY ALL THE OBJECTS AGES < 30 </button>
+        <button onclick="display2()">DISPLAY ALL THE OBJECTS HAVING COUNTRY INDIA</button>
+    </div>
+    <h1>**Get the result in console by clicking the button**</h1>
+    <script>
+        function display1() {
+            console.log("Objects having age less than 30");
+            developers.forEach(ele => {
+                if(ele.age<30){
+                    console.log(ele);
+                }
+            });  
+        }
+        function display2() {
+            console.log("Objects having country as india");
+            developers.forEach(ele => {
+                if(ele.country==="India"){
+                    console.log(ele);
+                }
+            });  
+        }
+
+
+    </script>
+</body>
+</html>

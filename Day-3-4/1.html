@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Buttons and Image</title>
+    <style>
+        body{
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: bisque;
+        }
+        p{
+            width: 100%;
+            height: 70vh;
+        }
+        p img{
+            width: 100%;
+            height: 70vh;
+        }
+        .buttons{
+            margin-left: 40%;
+        }
+        .buttons button{
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+            background-color: chartreuse ;
+            color: black;
+            border: 2px solid #ffffff;
+            font-weight: bold;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        .buttons button:hover{
+        color: black;
+        border: 2px solid chartreuse;
+        background-color: #00000000;
+        }
+        h1{
+        font-size: 30px;
+        text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a webpage containing an image and three buttons</h1>
+    <p><img class="banner" src="https://www.theprimacy.com/blog/wp-content/uploads/2016/10/HTML5.png" alt="HTML"></p>
+    <div class="buttons">
+    <button onclick="btn1()"> HTML </button>
+    <button onclick="btn2()"> CSS </button>
+    <button onclick="btn3()"> JS </button>
+    </div>
+
+    <script>
+        const img=document.getElementById("banner");
+
+        function btn1() {
+            const img=document.getElementsByClassName("banner");
+            img[0].src="https://www.theprimacy.com/blog/wp-content/uploads/2016/10/HTML5.png";
+        }
+        function btn2() {
+            const img=document.getElementsByClassName("banner");
+            img[0].src="https://pixelmechanics.com.sg/wp-content/uploads/2019/04/css.jpg";
+        }
+        function btn3() {
+            const img=document.getElementsByClassName("banner");
+            img[0].src="https://globalfuture.solutions/wp-content/uploads/2019/06/javascript-frameworks.jpg";
+        }
+    </script>
+</body>
+</html>
